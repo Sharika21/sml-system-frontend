@@ -1,5 +1,7 @@
 <app-menubar></app-menubar>
 
+<!-- <app-nonwordset-toolbar></app-nonwordset-toolbar> -->
+
 <div class="nonword-set-container">
     <div class="card-container">
         <div class="nonword-set-card card-item">
@@ -297,8 +299,11 @@
 
                         </div>
                     </form>
-
                 </mat-card-content>
+
+                <mat-card-actions class="actions">
+                    <button mat-flat-button color="primary" class="home-button" (click)="navigateToHome()">BACK TO HOME PAGE</button>
+                </mat-card-actions>
 
             </mat-card>
         </div>

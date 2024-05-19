@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-create-nonwordset-page',
@@ -6,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrl: './create-nonwordset-page.component.scss'
 })
 export class CreateNonwordsetPageComponent {
+  constructor(private router: Router) {}
 
+  navigateToHome() {
+    this.router.navigate(['/home']);
+  }
 }

@@ -10,20 +10,21 @@
     background-color: #c3d8e7;
     width: 100%;
     justify-content: center;
-    // margin-bottom: 100px;
 }
 
-.card-item {
-    // width: 1250px;
+.contact-header {
+    align-self: center;
 }
 
 mat-card {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     border: 10px solid  rgb(255, 149, 62);
     padding: 20px;
 }
 
 mat-card-content {
+    padding: 10px;
+}
+
+.actions {
+    align-self: center;
 }

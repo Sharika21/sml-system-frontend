@@ -6,12 +6,11 @@
             <button mat-menu-item>Open</button>
             <button mat-menu-item>Save</button>
             <button mat-menu-item>Save As</button>
-            <button mat-menu-item>Exit</button>
         </mat-menu>
 
         <button mat-button [matMenuTriggerFor]="belowView">View</button>
         <mat-menu #belowView="matMenu" yPosition="below">
-            <button mat-menu-item>Toolbar</button>
+            <button mat-menu-item (click)="toggleToolbar()">Toolbar</button>
             <button mat-menu-item>Status Bar</button>
         </mat-menu>
 
@@ -37,6 +36,9 @@
             <button mat-menu-item>Variation Level 2</button>
             <button mat-menu-item>Variation Level 3</button>
         </mat-menu>
+    </div>
 
+    <div *ngIf="showToolbar">
+        <app-nonwordset-toolbar></app-nonwordset-toolbar>
     </div>
 </div>

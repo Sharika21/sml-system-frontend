@@ -1,53 +1,61 @@
 <div class="homepage-container">
+  <div class="info-container">
+    <mat-card class="info-card">
+      <mat-card-title class="info-title">ABOUT</mat-card-title>
+      <mat-card-content class="content">
+        The main purpose of this website is to make the software that generates the treatment stimuli of the SML approach available to clinical researchers and clinicians who are familiar with the rationale and methods of the SML approach.
+      </mat-card-content>
+
+      <mat-card-content class="content">
+        The reader is urged to first become familiar with the rationale and methods of the SML approach before application. These are described in two international publications in Aphasiology (2011) and American Journal of Speech-Language Pathology (2018). See the full references in Further Reading on this site. A brief summary of the methods, and an even briefer summary of the rationale, are included on this website.
+      </mat-card-content>
+
+      <mat-card-content class="content">
+        Research on the outcomes of the SML approach to treating apraxia of speech in adults (AOS) and children (CAS) is continuously being undertaken. The reader is cautioned that only Level (or Class) 3 evidence (Wertz, 2002) has thus far been accumulated. This evidence was derived from the treatment of clients from different language groups with either childhood or acquired apraxia of speech.
+      </mat-card-content>
+    </mat-card>
+  </div>
+
+  <div class="feature-container">
     <div class="card-container">
       <div class="about-sml card-item" (click)="navigateToAboutSml()">
         <mat-card class="card">
           <mat-card-header>
-            <mat-card-title>
-              ABOUT THE SML APPROACH
-            </mat-card-title>
-            <mat-card-subtitle>
-              Learn more about the SML Approach
-            </mat-card-subtitle>
+            <mat-card-title>ABOUT THE SML APPROACH</mat-card-title>
+            <mat-card-subtitle>Learn more about the SML Approach</mat-card-subtitle>
           </mat-card-header>
-          <mat-card-content>
-            This is the content of the card.
-          </mat-card-content>
+          <!-- <mat-card-content>This is the content of the card.</mat-card-content> -->
+          <div class="icon-container">
+            <mat-icon class="large-icon">info</mat-icon>
+          </div>
         </mat-card>
       </div>
   
-      <div class="create-nonword-set card-item" (click)=navigateToCreateNonwordSet()>
+      <div class="create-nonword-set card-item" (click)="navigateToCreateNonwordSet()">
         <mat-card class="card">
           <mat-card-header>
-            <mat-card-title>
-              CREATE NONWORD SETS
-            </mat-card-title>
-            <mat-card-subtitle>
-              Create CVCV and/or CVC nonword sets
-            </mat-card-subtitle>
+            <mat-card-title>CREATE NONWORD SETS</mat-card-title>
+            <mat-card-subtitle>Create CVCV and/or CVC nonword sets</mat-card-subtitle>
           </mat-card-header>
-          <mat-card-content>
-            This is the content of the card.
-          </mat-card-content>
+          <!-- <mat-card-content>This is the content of the card.</mat-card-content> -->
+          <div class="icon-container">
+            <mat-icon class="large-icon">file_copy</mat-icon>
+          </div>
         </mat-card>
       </div>
   
-      <div class="user-manual card-item" (click)=navigateToUserManual()>
+      <div class="user-manual card-item" (click)="navigateToUserManual()">
         <mat-card class="card">
           <mat-card-header>
-            <mat-card-title>
-              USER MANUAL
-            </mat-card-title>
-            <mat-card-subtitle>
-              Learn how to use the system
-            </mat-card-subtitle>
+            <mat-card-title>USER MANUAL</mat-card-title>
+            <mat-card-subtitle>Learn how to use the system</mat-card-subtitle>
           </mat-card-header>
-          <mat-card-content>
-            This is the content of the card.
-          </mat-card-content>
+          <!-- <mat-card-content>This is the content of the card.</mat-card-content> -->
+          <div class="icon-container">
+            <mat-icon class="large-icon">featured_play_list</mat-icon>
+          </div>
         </mat-card>
       </div>
-  
-  
     </div>
   </div>
+</div>

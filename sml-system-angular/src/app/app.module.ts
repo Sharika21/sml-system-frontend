@@ -25,6 +25,7 @@ import { CreateNonwordsetPageComponent } from './Pages/create-nonwordset-page/cr
 import { ToolbarComponent } from './toolbar/toolbar.component';
 import { MenubarComponent } from './menubar/menubar.component';
 import { FooterComponent } from './footer/footer.component';
+import { NonwordsetToolbarComponent } from './nonwordset-toolbar/nonwordset-toolbar.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { FooterComponent } from './footer/footer.component';
     CreateNonwordsetPageComponent,
     ToolbarComponent,
     MenubarComponent,
-    FooterComponent
+    FooterComponent,
+    NonwordsetToolbarComponent
   ],
   imports: [
     BrowserModule,

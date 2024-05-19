@@ -2,11 +2,13 @@
     <div class="card-container">
         <div class="contact-us-card card-item">
             <mat-card>
-                <mat-card-header>
-                    <mat-card-title>
-                        CONTACT US
-                    </mat-card-title>
-                </mat-card-header>
+                <div class="contact-header">
+                    <mat-card-header>
+                        <mat-card-title class="contact-title">
+                            CONTACT US
+                        </mat-card-title>
+                    </mat-card-header>
+                </div>
                 <mat-card-content>
                     <div class="name">
                         Dr. Anita van der Merwe
@@ -29,6 +31,11 @@
                         <a href="mailto:{{ emailAddressKruger }}">{{ emailAddressKruger }}</a>
                     </div>
                 </mat-card-content>
+
+                <mat-card-actions class="actions">
+                    <button mat-flat-button color="primary" class="home-button" (click)="navigateToHome() ">BACK TO HOME PAGE</button>
+                </mat-card-actions>
+                
             </mat-card>
         </div>
     </div>
