@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-about-sml-page',
@@ -6,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrl: './about-sml-page.component.scss'
 })
 export class AboutSmlPageComponent {
+  constructor(private router: Router) {}
 
+  navigateToHome() {
+    this.router.navigate(['/home']);
+  }
 }
