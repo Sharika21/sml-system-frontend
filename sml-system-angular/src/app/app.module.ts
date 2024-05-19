@@ -23,6 +23,7 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
 import { HomepageComponent } from './Pages/homepage/homepage.component';
 import { CreateNonwordsetPageComponent } from './Pages/create-nonwordset-page/create-nonwordset-page.component';
 import { ToolbarComponent } from './toolbar/toolbar.component';
+import { MenubarComponent } from './menubar/menubar.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { ToolbarComponent } from './toolbar/toolbar.component';
     ContactUsPageComponent,
     HomepageComponent,
     CreateNonwordsetPageComponent,
-    ToolbarComponent
+    ToolbarComponent,
+    MenubarComponent
   ],
   imports: [
     BrowserModule,

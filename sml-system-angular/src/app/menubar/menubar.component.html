@@ -1,0 +1,42 @@
+<div class="menubar">
+    <div class="menu-items">
+        <button mat-button [matMenuTriggerFor]="belowFile">File</button>
+        <mat-menu #belowFile="matMenu" yPosition="below">
+            <button mat-menu-item>New</button>
+            <button mat-menu-item>Open</button>
+            <button mat-menu-item>Save</button>
+            <button mat-menu-item>Save As</button>
+            <button mat-menu-item>Exit</button>
+        </mat-menu>
+
+        <button mat-button [matMenuTriggerFor]="belowView">View</button>
+        <mat-menu #belowView="matMenu" yPosition="below">
+            <button mat-menu-item>Toolbar</button>
+            <button mat-menu-item>Status Bar</button>
+        </mat-menu>
+
+        <button mat-button [matMenuTriggerFor]="create">Create</button>
+        <mat-menu #create="matMenu">
+            <button mat-menu-item>CVCV & CVC Document</button>
+            <button mat-menu-item [matMenuTriggerFor]="cvcv">CVCV Document</button>
+            <button mat-menu-item [matMenuTriggerFor]="cvc">CVC Document</button>
+        </mat-menu>
+
+        <mat-menu #cvcv="matMenu">
+            <button mat-menu-item>All Levels</button>
+            <button mat-menu-item>Variation Level 1</button>
+            <button mat-menu-item>Variation Level 2</button>
+            <button mat-menu-item>Variation Level 3</button>
+            <button mat-menu-item>Variation Level 4</button>
+            <button mat-menu-item>Variation Level 5</button>
+        </mat-menu>
+
+        <mat-menu #cvc="matMenu">
+            <button mat-menu-item>All Levels</button>
+            <button mat-menu-item>Variation Level 1</button>
+            <button mat-menu-item>Variation Level 2</button>
+            <button mat-menu-item>Variation Level 3</button>
+        </mat-menu>
+
+    </div>
+</div>
