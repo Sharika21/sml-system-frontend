@@ -22,6 +22,7 @@ import { ContactUsPageComponent } from './Pages/contact-us-page/contact-us-page.
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { HomepageComponent } from './Pages/homepage/homepage.component';
 import { CreateNonwordsetPageComponent } from './Pages/create-nonwordset-page/create-nonwordset-page.component';
+import { ToolbarComponent } from './toolbar/toolbar.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { CreateNonwordsetPageComponent } from './Pages/create-nonwordset-page/cr
     AboutSmlPageComponent,
     ContactUsPageComponent,
     HomepageComponent,
-    CreateNonwordsetPageComponent
+    CreateNonwordsetPageComponent,
+    ToolbarComponent
   ],
   imports: [
     BrowserModule,
