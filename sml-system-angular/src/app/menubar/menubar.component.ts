@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrl: './menubar.component.scss'
 })
 export class MenubarComponent {
+  showToolbar: boolean = false;
 
+  toggleToolbar() {
+    this.showToolbar = !this.showToolbar;
+  }
 }
