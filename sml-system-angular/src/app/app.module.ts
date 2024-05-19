@@ -19,9 +19,9 @@ import { CreateAccountPageComponent } from './Pages/create-account-page/create-a
 import { UserManualPageComponent } from './Pages/user-manual-page/user-manual-page.component';
 import { AboutSmlPageComponent } from './Pages/about-sml-page/about-sml-page.component';
 import { ContactUsPageComponent } from './Pages/contact-us-page/contact-us-page.component';
-import { CreateNonwordSetPageComponent } from './Pages/create-nonword-set-page/create-nonword-set-page.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { HomepageComponent } from './Pages/homepage/homepage.component';
+import { CreateNonwordsetPageComponent } from './Pages/create-nonwordset-page/create-nonwordset-page.component';
 
 @NgModule({
   declarations: [
@@ -31,8 +31,8 @@ import { HomepageComponent } from './Pages/homepage/homepage.component';
     UserManualPageComponent,
     AboutSmlPageComponent,
     ContactUsPageComponent,
-    CreateNonwordSetPageComponent,
-    HomepageComponent
+    HomepageComponent,
+    CreateNonwordsetPageComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,65 @@
+.nonword-set-container {
+    display: flex;
+    justify-content: center;
+}
+
+.card-container {
+    margin-top: 40px;
+    display: flex;
+    padding: 40px;
+    background-color: #c3d8e7;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.card-item {
+    width: 100%;
+    position: relative;
+}
+
+mat-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border: 10px solid  rgb(255, 149, 62);
+}
+
+mat-divider {
+    height: 10px;
+    color: black;
+}
+
+mat-form-field {
+    padding: 10px;
+}
+
+.form-text {
+    display: block;
+    text-align: center;
+    padding: 10px;
+}
+
+.patient,
+.target-consonants,
+.target-vowels {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.reduction {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.consonants,
+.vowels {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); 
+    gap: 10px;
+    padding: 25px;
+}
