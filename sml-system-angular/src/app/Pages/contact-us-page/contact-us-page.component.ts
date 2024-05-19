@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrl: './contact-us-page.component.scss'
 })
 export class ContactUsPageComponent {
-
+  emailAddressMerwe: string = 'anita.vandermerwe05@gmail.com';
+  emailAddressKruger: string = 'esedra.kruger@up.ac.za';
 }
