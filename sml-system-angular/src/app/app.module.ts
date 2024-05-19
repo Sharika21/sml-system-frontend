@@ -10,6 +10,7 @@ import { UserManualPageComponent } from './Pages/user-manual-page/user-manual-pa
 import { AboutSmlPageComponent } from './Pages/about-sml-page/about-sml-page.component';
 import { ContactUsPageComponent } from './Pages/contact-us-page/contact-us-page.component';
 import { CreateNonwordSetPageComponent } from './Pages/create-nonword-set-page/create-nonword-set-page.component';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,9 @@ import { CreateNonwordSetPageComponent } from './Pages/create-nonword-set-page/c
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [
+    provideAnimationsAsync()
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
