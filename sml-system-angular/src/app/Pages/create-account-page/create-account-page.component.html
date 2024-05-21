@@ -8,34 +8,34 @@
                     </mat-card-title>
 
                     <mat-card-content class="form-container">
-                        <form>
-                            <div class="email-action">
-                                Enter your email:
-                            </div>
-                            <div class="email-field">
-                                <mat-form-field appearance="outline">
-                                    <mat-label>Email</mat-label>
-                                    <input matInput placeholder=" ">
-                                </mat-form-field>
-                            </div>
-                            
+                        <form [formGroup]="userForm" #submitForm="ngForm">
                             <div class="username-action">
                                 Create a username:
                             </div>
                             <div class="username-field">
                                 <mat-form-field appearance="outline">
                                     <mat-label>Username</mat-label>
-                                    <input matInput placeholder=" ">
+                                    <input matInput formControlName="username">
                                 </mat-form-field>
                             </div>
 
+                            <div class="email-action">
+                                Enter your email:
+                            </div>
+                            <div class="email-field">
+                                <mat-form-field appearance="outline">
+                                    <mat-label>Email</mat-label>
+                                    <input matInput formControlName="email">
+                                </mat-form-field>
+                            </div>
+                            
                             <div class="password-action">
                                 Create a password:
                             </div>
                             <div class="password-field">
                                 <mat-form-field appearance="outline">
                                     <mat-label>Password</mat-label>
-                                    <input matInput placeholder=" ">
+                                    <input matInput formControlName="password">
                                 </mat-form-field>
                             </div>
                         </form>

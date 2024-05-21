@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { LoginDTO } from '../../DTOs/LoginDTO';
 import { LoginService } from '../../login.service';
 import { FormControl, FormGroup } from '@angular/forms';
 
