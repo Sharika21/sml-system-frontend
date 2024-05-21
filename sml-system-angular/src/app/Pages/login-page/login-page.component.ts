@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { LoginService } from '../../login.service';
-import { FormControl, FormGroup } from '@angular/forms';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-login-page',
@@ -11,8 +11,8 @@ import { FormControl, FormGroup } from '@angular/forms';
 export class LoginPageComponent {
   loginForm: FormGroup = new FormGroup(
     {
-      email: new FormControl<string | null>(null),
-      password: new FormControl<string | null>(null)
+      email: new FormControl<string | null>(null, Validators.required),
+      password: new FormControl<string | null>(null, Validators.required)
     }
   )
   

@@ -11,7 +11,7 @@ export class UserService {
   constructor(private http: HttpClient) { }
 
   saveUser(username: string, email: string, password: string): Observable<any> {
-    const emailJson = JSON.stringify(email);
-    return this.http.post<any>(this.apiURL, {username, emailJson, password});
+    // const emailJson = JSON.stringify(email);
+    return this.http.post<any>(this.apiURL, {username, email, password});
   }
 }
