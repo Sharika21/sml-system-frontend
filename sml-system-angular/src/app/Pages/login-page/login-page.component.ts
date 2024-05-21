@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { LoginDTO } from '../../DTOs/LoginDTO';
+import { LoginService } from '../../login.service';
+import { FormControl, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-login-page',
@@ -7,10 +10,40 @@ import { Router } from '@angular/router';
   styleUrl: './login-page.component.scss'
 })
 export class LoginPageComponent {
-  constructor(private router: Router) { }
+  loginForm: FormGroup = new FormGroup(
+    {
+      email: new FormControl<string | null>(null),
+      password: new FormControl<string | null>(null)
+    }
+  )
+  
+  constructor(
+    private router: Router, 
+    private loginService: LoginService
+  ) { }
 
   signIn() {
-    this.router.navigate(['/home']);
+    const email = this.loginForm.get('email')?.value;
+    const password = this.loginForm.get('password')?.value;
+
+    if (email && password) {
+      this.loginService.loginUser(email, password).subscribe({
+        next: (response) => {
+          // Handle successful authentication
+          if (response.message == 'Login success') {
+            console.log('Login success', response);
+            this.router.navigate(['/home']);
+          }
+
+        },
+        error: (err) => {
+          // Handle authentication error
+          console.error('Login failed', err);
+        }
+      });
+    } else {
+      console.error('Email and password must be provided');
+    }
   }
 
   signUp() {
