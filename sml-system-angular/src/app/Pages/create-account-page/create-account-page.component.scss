@@ -9,6 +9,7 @@
     padding: 40px;
     width: 100%;
     justify-content: center;
+    margin-bottom: 50px;
 }
 
 .card-item {
@@ -47,8 +48,18 @@
     padding: 20px;
 }
 
-.create-button {
+.create-button, .login-button {
     width: 130%;
-    margin-bottom: 20px;
+    // margin-bottom: 20px;
     background-color: #2F5DBC;
+}
+
+.create-button:hover,
+.login-button:hover {
+    background-color: rgb(255, 149, 62); 
+    color: white;
+}
+
+.option-label {
+    padding: 10px;
 }

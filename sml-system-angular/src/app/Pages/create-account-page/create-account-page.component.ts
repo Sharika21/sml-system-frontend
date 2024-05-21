@@ -42,5 +42,9 @@ export class CreateAccountPageComponent {
     }
   }
 
+
+  backToLogin() {
+    this.router.navigate(['/']);
+  }
 }
 

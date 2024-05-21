@@ -42,7 +42,11 @@
                     </mat-card-content>
 
                     <mat-card-actions class="button-cluster">
-                        <button mat-flat-button color="primary" class="create-button" (click)="navigateToLogin() ">CREATE ACCOUNT</button>
+                        <button mat-flat-button color="primary" class="create-button" (click)="navigateToLogin()">CREATE ACCOUNT</button>
+                        <div class="option-label">
+                            OR
+                        </div>
+                        <button mat-flat-button color="primary" class="login-button" (click)="backToLogin()">BACK TO LOGIN</button>
                     </mat-card-actions>
                 </mat-card>
             </div>
