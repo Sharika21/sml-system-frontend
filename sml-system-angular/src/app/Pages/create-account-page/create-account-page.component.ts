@@ -29,9 +29,11 @@ export class CreateAccountPageComponent {
 
     if (username && email && password) {
       this.userService.saveUser(username, email, password).subscribe({
-        next: () => {
-          console.log('User saved successfully');
-          this.router.navigate(['']);
+        next: (response) => {
+          if (response.message == "User saved") {
+            console.log('User saved successfully', response);
+            this.router.navigate(['']);
+          }
         },
         error: (err) => {
           console.error('Error saving user:', err);
