@@ -12,20 +12,20 @@
                     </mat-card-subtitle>
 
                     <mat-card-content class="form-container">
-                        <form>
-                            <mat-label>Please enter your username:</mat-label>
-                            <div class="username-field">
+                        <form [formGroup]="loginForm" #submitForm="ngForm">
+                            <mat-label>Please enter your email:</mat-label>
+                            <div class="email-field">
                                 <mat-form-field appearance="outline">
-                                    <mat-label>Username</mat-label>
-                                    <input matInput placeholder=" ">
+                                    <mat-label>Email</mat-label>
+                                    <input matInput formControlName="email">
                                 </mat-form-field>
                             </div>
 
-                            <mat-label>Please eneter your password:</mat-label>
+                            <mat-label>Please enter your password:</mat-label>
                             <div class="password-field">
                                 <mat-form-field appearance="outline">
                                     <mat-label>Password</mat-label>
-                                    <input matInput placeholder=" ">
+                                    <input matInput formControlName="password">
                                 </mat-form-field>
                             </div>
                         </form>
