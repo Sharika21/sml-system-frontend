@@ -30,7 +30,7 @@ export class CreateAccountPageComponent {
     if (username && email && password) {
       this.userService.saveUser(username, email, password).subscribe({
         next: (response) => {
-          if (response.message == "User saved") {
+          if (response.message == "User added") {
             console.log('User saved successfully', response);
             this.router.navigate(['']);
           }
